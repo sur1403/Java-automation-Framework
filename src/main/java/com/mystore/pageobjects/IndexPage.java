@@ -33,17 +33,58 @@ public class IndexPage extends Action {
     @FindBy(xpath = "//div[@id='n2-ss-6-arrow-next']/img[@alt='Arrow']")
     WebElement rightArrow;
 
+    @FindBy(xpath = "//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[3]")
+    WebElement HTMLAddToBasket;
+
+    @FindBy(xpath = "//*[@id=\"text-22-sub_row_1-0-2-0-0\"]/div/ul/li/a[3]")
+    WebElement SeleniumAddToBasket;
+
+    @FindBy(xpath = "//*[@id=\"text-22-sub_row_1-0-2-2-0\"]/div/ul/li/a[3]")
+    WebElement JSToBasket;
+
     public IndexPage(){
         PageFactory.initElements(driver, this);
     }
 
-    public void clickOnSeleniumImg(){
+    public SeleniumRuby clickOnSeleniumImg() throws Throwable{
         Action.click(driver, selRubyImg );
+        return new SeleniumRuby();
     }
 
-    public void thinkInHTMLImg(){
+    public ThinkInHTML thinkInHTMLImg() throws Throwable{
         Action.click(driver, thinkInHtmlImg );
+        return new ThinkInHTML();
     }
 
+    public MasterJS masterJSImg() throws Throwable{
+        Action.click(driver, masterJSImg);
+        return new MasterJS();
+    }
 
+    public boolean seleniumAddToCart() throws Throwable{
+        Action.click(driver,SelniumAddToCartBtn );
+        return Action.isDisplayed(driver, SeleniumAddToBasket);
+    }
+
+    public boolean htmlAddToCart() throws Throwable{
+        Action.click(driver,thinkInHTMLBtn );
+        return Action.isDisplayed(driver, HTMLAddToBasket);
+    }
+    public boolean masterJSAddToCart(){
+        Action.click(driver, masterJSBtn);
+        return Action.isDisplayed(driver, JSToBasket);
+    }
+
+    public void moveArrows() throws Throwable{
+        Action.click(driver, leftArrow);
+        Action.click(driver, rightArrow);
+    }
+
+    public boolean verifyTitle() throws Throwable{
+        return Action.isDisplayed(driver, selBookImg);
+    }
+
+    public String getMyStoreTitle() throws Throwable{
+        return Action.getTitle(driver);
+    }
 }
