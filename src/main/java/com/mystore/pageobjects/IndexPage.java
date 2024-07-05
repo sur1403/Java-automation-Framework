@@ -42,6 +42,12 @@ public class IndexPage extends Action {
     @FindBy(xpath = "//*[@id=\"text-22-sub_row_1-0-2-2-0\"]/div/ul/li/a[3]")
     WebElement JSToBasket;
 
+    @FindBy(xpath = "//input[@type = 'email']")
+    WebElement email;
+
+    @FindBy(xpath = "//input[@type = 'submit']")
+    WebElement submitBtn;
+
     public IndexPage(){
         PageFactory.initElements(driver, this);
     }
@@ -86,5 +92,10 @@ public class IndexPage extends Action {
 
     public String getMyStoreTitle() throws Throwable{
         return Action.getTitle(driver);
+    }
+
+    public void subscribeHere(String email1) throws  Throwable{
+        Action.type(email, email1);
+        Action.click(driver, submitBtn);
     }
 }
