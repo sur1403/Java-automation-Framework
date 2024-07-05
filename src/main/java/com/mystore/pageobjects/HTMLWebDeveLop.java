@@ -1,4 +1,10 @@
 package com.mystore.pageobjects;
 
-public class HTMLWebDeveLop {
+import com.mystore.base.BaseClass;
+import org.openqa.selenium.support.PageFactory;
+
+public class HTMLWebDeveLop extends BaseClass {
+    public HTMLWebDeveLop(){
+        PageFactory.initElements(driver, this);
+    }
 }

@@ -1,4 +1,11 @@
 package com.mystore.pageobjects;
 
-public class FunctionalProgrammingJS {
+import com.mystore.base.BaseClass;
+import org.openqa.selenium.support.PageFactory;
+
+public class FunctionalProgrammingJS extends BaseClass {
+
+    public FunctionalProgrammingJS(){
+        PageFactory.initElements(driver, this);
+    }
 }

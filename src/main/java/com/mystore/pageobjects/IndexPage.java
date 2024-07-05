@@ -48,6 +48,31 @@ public class IndexPage extends Action {
     @FindBy(xpath = "//input[@type = 'submit']")
     WebElement submitBtn;
 
+    @FindBy(xpath = "//a[text()='Shop']")
+    WebElement shop;
+
+    @FindBy(xpath = "//a[text()='My Account']")
+    WebElement myAccount;
+
+    @FindBy(xpath = "//a[@title='Start shopping']")
+    WebElement cart;
+
+
+    public ShopPage goToShop(){
+        Action.click(driver, shop);
+        return new ShopPage();
+    }
+
+    public MyAccount gotoMyAccount(){
+        Action.click(driver, myAccount);
+        return new MyAccount();
+    }
+
+    public ShopPage gotoCart(){
+        Action.click(driver, cart);
+        return new ShopPage();
+    }
+
     public IndexPage(){
         PageFactory.initElements(driver, this);
     }

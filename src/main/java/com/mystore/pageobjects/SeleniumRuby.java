@@ -1,5 +1,12 @@
 package com.mystore.pageobjects;
 
-public class SeleniumRuby {
+import com.mystore.base.BaseClass;
+import org.openqa.selenium.support.PageFactory;
+
+public class SeleniumRuby extends BaseClass {
+
+    public SeleniumRuby(){
+        PageFactory.initElements(driver, this);
+    }
 
 }

@@ -1,4 +1,11 @@
 package com.mystore.pageobjects;
 
-public class AndriodQuickStart {
+import com.mystore.base.BaseClass;
+import org.openqa.selenium.support.PageFactory;
+
+public class AndriodQuickStart extends BaseClass {
+
+    public AndriodQuickStart(){
+        PageFactory.initElements(driver, this);
+    }
 }
