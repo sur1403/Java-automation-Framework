@@ -13,7 +13,8 @@ import java.time.Duration;
 import java.util.List;
 
 public class HomePageTest extends BaseClass {
-    IndexPage indexPage = new IndexPage();;
+    IndexPage indexPage = new IndexPage();
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     @BeforeMethod
     public void setup() {
@@ -26,10 +27,8 @@ public class HomePageTest extends BaseClass {
 
     @Test
     public void validateThreeSlider() throws Throwable {
-
         indexPage.gotoCart();
         indexPage.goToHome();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> sliders = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(indexPage.validateIndexPage("Shop Selenium Books")));
         if (sliders.size() == 3) {
             System.out.println("Test Passed: Home page contains exactly three sliders.");
@@ -39,6 +38,9 @@ public class HomePageTest extends BaseClass {
     }
 
     public void validateThreeArivals(){
+        List<WebElement> arrivals = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(indexPage.ifProductVisible()));
+
+
 
 
     }

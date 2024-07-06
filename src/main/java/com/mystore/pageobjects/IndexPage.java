@@ -10,6 +10,10 @@ public class IndexPage extends Action {
     @FindBy(xpath = "//img[@alt = 'Shop Selenium Books']")
     WebElement selBookImg;
 
+
+    @FindBy(css = ".attachment-shop_catalog")
+    WebElement product;
+
     @FindBy(xpath = "//a[text()='Home']")
     WebElement homeLink;
 
@@ -139,4 +143,10 @@ public class IndexPage extends Action {
         Action.type(email, email1);
         Action.click(driver, submitBtn);
     }
+
+    public By ifProductVisible(){
+        Action.isDisplayed(driver, product);
+        return null;
+    }
+
 }
