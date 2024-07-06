@@ -1,4 +1,4 @@
 package com.mystore.testcases;
 
-public class Registration {
+public class ShopTest {
 }

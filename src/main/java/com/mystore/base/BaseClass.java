@@ -13,6 +13,7 @@ import org.testng.annotations.Parameters;
 
 import javax.swing.*;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -25,17 +26,14 @@ public class BaseClass {
 
 
     @BeforeTest
-    @Parameters("browser")
-    public void loadConfig() {
-        try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
-            if (input == null) {
-                System.out.println("Sorry, unable to find config.properties");
-                return;
-            }
-            // load a properties file from class path, inside static method
-            prop.load(input);
-        } catch (IOException ex) {
-            ex.printStackTrace();
+    public static void loadConfig() {
+        prop = new Properties();
+        try {
+            FileInputStream fis = new FileInputStream("/Users/aseempathak/Downloads/Java-automation-Framework/Configuration/config.properties");
+            prop.load(fis);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to load properties file");
         }
     }
 
@@ -43,17 +41,25 @@ public class BaseClass {
 
        WebDriverManager.chromedriver().setup();
        String browsername = prop.getProperty("browser");
+       if (browsername != null) {
+           if (browsername.contains("Chrome")) {
+               WebDriverManager.chromedriver().setup();
+               driver = new ChromeDriver();
+           } else if (browsername.contains("Firefox")) {
+               WebDriverManager.firefoxdriver().setup();
+               driver = new FirefoxDriver();
 
-       if (browsername.contains("Chrome")) {
-           driver = new ChromeDriver();
+           } else if (browsername.contains("IE")) {
+               WebDriverManager.iedriver().setup();
+               driver = new InternetExplorerDriver();
+           }
+           driver.manage().window().maximize();
+           Action.implicitWait(driver, 10);
+           Action.pageLoadTimeOut(driver, 30);
+           driver.get(prop.getProperty("url"));
        }
-       else if(browsername.contains("Firefox")){
-           driver = new FirefoxDriver();
-
+       else {
+           System.out.println("Browser name is null. Please check the config.properties file.");
        }
-       else if(browsername.contains("IE")) {
-           driver = new InternetExplorerDriver();
-       }
-       Action.
    }
     }

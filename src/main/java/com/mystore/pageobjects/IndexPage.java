@@ -1,6 +1,7 @@
 package com.mystore.pageobjects;
 
 import com.mystore.actiondriver.Action;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 public class IndexPage extends Action {
     @FindBy(xpath = "//img[@alt = 'Shop Selenium Books']")
     WebElement selBookImg;
+
+    @FindBy(xpath = "//a[text()='Home']")
+    WebElement homeLink;
 
     @FindBy(xpath = "//img[@title = 'Selenium Ruby']")
     WebElement selRubyImg;
@@ -58,10 +62,17 @@ public class IndexPage extends Action {
     WebElement cart;
 
 
-    public ShopPage goToShop(){
+    public ShopPage goToShop() {
         Action.click(driver, shop);
         return new ShopPage();
     }
+
+    public By validateIndexPage(String text) {
+        if (text.equals("Shop Selenium Books")) {
+            return By.className("n2-ss-slider-3");
+    }
+    return null;
+}
 
     public MyAccount gotoMyAccount(){
         Action.click(driver, myAccount);
@@ -80,6 +91,11 @@ public class IndexPage extends Action {
     public SeleniumRuby clickOnSeleniumImg() throws Throwable{
         Action.click(driver, selRubyImg );
         return new SeleniumRuby();
+    }
+
+    public IndexPage goToHome() throws Throwable{
+        Action.click(driver, homeLink);
+        return new IndexPage();
     }
 
     public ThinkInHTML thinkInHTMLImg() throws Throwable{

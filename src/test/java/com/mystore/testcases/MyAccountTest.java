@@ -1,4 +1,4 @@
 package com.mystore.testcases;
 
-public class MyAccount {
+public class MyAccountTest {
 }
