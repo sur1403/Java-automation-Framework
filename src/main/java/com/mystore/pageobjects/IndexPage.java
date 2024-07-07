@@ -1,12 +1,19 @@
 package com.mystore.pageobjects;
 
 import com.mystore.actiondriver.Action;
+import com.mystore.base.BaseClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class IndexPage extends Action {
+import java.time.Duration;
+import java.util.List;
+
+public class IndexPage extends BaseClass {
     @FindBy(xpath = "//img[@alt = 'Shop Selenium Books']")
     WebElement selBookImg;
 
@@ -41,6 +48,9 @@ public class IndexPage extends Action {
     @FindBy(xpath = "//div[@id='n2-ss-6-arrow-next']/img[@alt='Arrow']")
     WebElement rightArrow;
 
+    @FindBy(css = ".attachment-shop_catalog.size-shop_catalog.wp-post-image")
+    List<WebElement> sliders;
+
     @FindBy(xpath = "//*[@id=\"text-22-sub_row_1-0-2-1-0\"]/div/ul/li/a[3]")
     WebElement HTMLAddToBasket;
 
@@ -62,7 +72,7 @@ public class IndexPage extends Action {
     @FindBy(xpath = "//a[text()='My Account']")
     WebElement myAccount;
 
-    @FindBy(xpath = "//a[@title='Start shopping']")
+    @FindBy(id = "cart-button")
     WebElement cart;
 
 
@@ -71,25 +81,18 @@ public class IndexPage extends Action {
         return new ShopPage();
     }
 
-    public By validateIndexPage(String text) {
-        if (text.equals("Shop Selenium Books")) {
-            return By.className("n2-ss-slider-3");
-    }
-    return null;
-}
-
     public MyAccount gotoMyAccount(){
         Action.click(driver, myAccount);
         return new MyAccount();
     }
 
-    public ShopPage gotoCart(){
-        Action.click(driver, cart);
+    public ShopPage gotoShop(){
+        Action.click(driver, shop);
         return new ShopPage();
     }
 
     public IndexPage(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(BaseClass.driver, this);
     }
 
     public SeleniumRuby clickOnSeleniumImg() throws Throwable{
@@ -148,5 +151,9 @@ public class IndexPage extends Action {
         Action.isDisplayed(driver, product);
         return null;
     }
-
+    public List<WebElement> findSliders() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfAllElements(sliders));
+        return sliders;
+    }
 }
