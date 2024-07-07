@@ -19,8 +19,11 @@ public class HomePageTest extends BaseClass {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     @BeforeMethod
-    public void setup() {
+    public void setup() throws Throwable {
         launchApp();
+        indexPage = new IndexPage();
+        indexPage.gotoShop();
+        indexPage.goToHome();
     }
     @AfterMethod
     public void tearDown(){
@@ -29,20 +32,18 @@ public class HomePageTest extends BaseClass {
 
     @Test
     public void validateThreeSlider() throws Throwable {
-        indexPage = new IndexPage();
-        indexPage.gotoShop();
-        indexPage.goToHome();
 
-        // The locator for sliders is obtained from validateIndexPage method
         List<WebElement> sliders = indexPage.findSliders();
-
         Assert.assertNotNull(sliders);
         Assert.assertEquals(3, sliders.size());
-
-        System.out.println("Test Passed: Home page contains exactly three sliders.");
     }
+@Test
 
         public void validateThreeArivals(){
-        List<WebElement> arrivals = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(indexPage.ifProductVisible()));
+
+        List<WebElement> arrivals = indexPage.ifProductVisible();
+        Assert.assertNotNull(arrivals);
+        Assert.assertEquals(3,arrivals.size());
+
     }
 }

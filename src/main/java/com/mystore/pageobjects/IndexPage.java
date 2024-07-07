@@ -19,7 +19,7 @@ public class IndexPage extends BaseClass {
 
 
     @FindBy(css = ".attachment-shop_catalog")
-    WebElement product;
+    List<WebElement> product;
 
     @FindBy(xpath = "//a[text()='Home']")
     WebElement homeLink;
@@ -147,9 +147,10 @@ public class IndexPage extends BaseClass {
         Action.click(driver, submitBtn);
     }
 
-    public By ifProductVisible(){
-        Action.isDisplayed(driver, product);
-        return null;
+    public List<WebElement> ifProductVisible(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfAllElements(product));
+        return product;
     }
     public List<WebElement> findSliders() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
