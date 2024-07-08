@@ -76,101 +76,101 @@ public class IndexPage extends BaseClass {
 
 
     public ShopPage goToShop() {
-        Action.click(driver, shop);
+        Action.click(getDriver(), shop);
         return new ShopPage();
     }
 
     public MyAccount gotoMyAccount() {
-        Action.click(driver, myAccount);
+        Action.click(getDriver(), myAccount);
         return new MyAccount();
     }
 
     public ShopPage gotoShop() {
-        Action.click(driver, shop);
+        Action.click(getDriver(), shop);
         return new ShopPage();
     }
 
     public IndexPage() {
-        PageFactory.initElements(BaseClass.driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public SeleniumRuby clickOnSeleniumImg() throws Throwable {
-        Action.click(driver, selRubyImg);
+        Action.click(getDriver(), selRubyImg);
         return new SeleniumRuby();
     }
 
     public IndexPage goToHome() throws Throwable {
-        Action.click(driver, homeLink);
+        Action.click(getDriver(), homeLink);
         return new IndexPage();
     }
 
     public ThinkInHTML thinkInHTMLImg() throws Throwable {
-        Action.click(driver, thinkInHtmlImg);
+        Action.click(getDriver(), thinkInHtmlImg);
         return new ThinkInHTML();
     }
 
     public MasterJS masterJSImg() throws Throwable {
-        Action.click(driver, masterJSImg);
+        Action.click(getDriver(), masterJSImg);
         return new MasterJS();
     }
 
     public boolean seleniumAddToCart() throws Throwable {
-        Action.click(driver, SelniumAddToCartBtn);
-        return Action.isDisplayed(driver, SeleniumAddToBasket);
+        Action.click(getDriver(), SelniumAddToCartBtn);
+        return Action.isDisplayed(getDriver(), SeleniumAddToBasket);
     }
 
     public boolean htmlAddToCart() throws Throwable {
-        Action.click(driver, thinkInHTMLBtn);
-        return Action.isDisplayed(driver, HTMLAddToBasket);
+        Action.click(getDriver(), thinkInHTMLBtn);
+        return Action.isDisplayed(getDriver(), HTMLAddToBasket);
     }
 
     public boolean masterJSAddToCart() {
-        Action.click(driver, masterJSBtn);
-        return Action.isDisplayed(driver, JSToBasket);
+        Action.click(getDriver(), masterJSBtn);
+        return Action.isDisplayed(getDriver(), JSToBasket);
     }
 
     public void moveArrows() throws Throwable {
-        Action.click(driver, leftArrow);
-        Action.click(driver, rightArrow);
+        Action.click(getDriver(), leftArrow);
+        Action.click(getDriver(), rightArrow);
     }
 
     public boolean verifyTitle() throws Throwable {
-        return Action.isDisplayed(driver, selBookImg);
+        return Action.isDisplayed(getDriver(), selBookImg);
     }
 
     public String getMyStoreTitle() throws Throwable {
-        return Action.getTitle(driver);
+        return Action.getTitle(getDriver());
     }
 
     public void subscribeHere(String email1) throws Throwable {
         Action.type(email, email1);
-        Action.click(driver, submitBtn);
+        Action.click(getDriver(), submitBtn);
     }
 
     public List<WebElement> findSliders() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfAllElements(sliders));
         return sliders;
     }
 
     public List<WebElement> ifProductVisible() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfAllElements(product));
         return product;
     }
 
     public SeleniumRuby clickSelImage(){
-        Action.click(driver, selRubyImg);
+        Action.click(getDriver(), selRubyImg);
         return new SeleniumRuby();
     }
 
     public ThinkInHTML clickThinkInHTML(){
-        Action.click(driver, thinkInHtmlImg);
+        Action.click(getDriver(), thinkInHtmlImg);
         return new ThinkInHTML();
     }
 
     public MasterJS clickMasterJS(){
-        Action.click(driver, masterJSImg);
+        Action.click(getDriver(), masterJSImg);
         return new MasterJS();
     }
 }

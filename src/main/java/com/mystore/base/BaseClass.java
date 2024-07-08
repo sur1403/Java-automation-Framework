@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
 
 import java.io.FileInputStream;
@@ -14,8 +15,14 @@ import java.util.Properties;
 
 
 public class BaseClass {
-    public static WebDriver driver;
+//    public static WebDriver driver;
     public static Properties prop;
+
+    public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
+
+    public static WebDriver getDriver(){
+        return driver.get();
+    }
 
 
     @BeforeTest
@@ -37,19 +44,22 @@ public class BaseClass {
         if (browsername != null) {
             if (browsername.contains("Chrome")) {
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+//                driver = new ChromeDriver();
+                driver.set(new ChromeDriver());
             } else if (browsername.contains("Firefox")) {
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+//                driver = new FirefoxDriver();
+                driver.set(new FirefoxDriver());
 
             } else if (browsername.contains("IE")) {
                 WebDriverManager.iedriver().setup();
-                driver = new InternetExplorerDriver();
+//                driver = new InternetExplorerDriver();
+                driver.set(new InternetExplorerDriver());
             }
-            driver.manage().window().maximize();
-            Action.implicitWait(driver, 10);
-            Action.pageLoadTimeOut(driver, 30);
-            driver.get(prop.getProperty("url"));
+            getDriver().manage().window().maximize();
+            Action.implicitWait(getDriver(), 10);
+            Action.pageLoadTimeOut(getDriver(), 30);
+            getDriver().get(prop.getProperty("url"));
         } else {
             System.out.println("Browser name is null. Please check the config.properties file.");
         }

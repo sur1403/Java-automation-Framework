@@ -6,6 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 public class AndriodQuickStart extends BaseClass {
 
     public AndriodQuickStart(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 }

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AddressPage extends BaseClass {
 
     public AddressPage(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     @FindBy(id="billing_first_name")
@@ -47,7 +47,7 @@ public class AddressPage extends BaseClass {
     WebElement placeOrder;
 
     public OrdeRConfirmationPAge configOPrdeR(){
-        Action.click(driver, placeOrder);
+        Action.click(getDriver(), placeOrder);
         return new OrdeRConfirmationPAge();
     }
 }
