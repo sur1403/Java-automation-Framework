@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class MasterJS extends BaseClass {
 
     public MasterJS(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     @FindBy(xpath = "//button[text()='Add to basket']")
@@ -19,9 +19,9 @@ public class MasterJS extends BaseClass {
     WebElement description;
 
     public boolean ifAddToBasketVisible(){
-        return Action.isDisplayed(driver, addToBasket);
+        return Action.isDisplayed(getDriver(), addToBasket);
     }
     public boolean validatateDescription(){
-        return Action.isDisplayed(driver, description);
+        return Action.isDisplayed(getDriver(), description);
     }
 }

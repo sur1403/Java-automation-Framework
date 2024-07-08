@@ -17,7 +17,7 @@ public class OrderPage extends BaseClass {
     WebElement checkout;
 
     public OrderPage() {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(getDriver(),this);
     }
 
     public double getUnitPrice(){
@@ -35,7 +35,7 @@ public class OrderPage extends BaseClass {
     }
 
     public AddressPage clickOnCheckout(){
-        Action.click(driver, checkout);
+        Action.click(getDriver(), checkout);
         return new AddressPage();
     }
 }

@@ -12,11 +12,11 @@ public class LostPassworsdPage extends BaseClass {
 
 
     public LostPassworsdPage(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     public String verifyTitle(){
-        return Action.getTitle(driver);
+        return Action.getTitle(getDriver());
     }
 }
 

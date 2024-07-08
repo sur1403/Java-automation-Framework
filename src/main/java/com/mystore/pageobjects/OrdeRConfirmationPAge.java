@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OrdeRConfirmationPAge extends BaseClass {
     public OrdeRConfirmationPAge(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
     @FindBy(xpath = "//*[text()= 'Thank you. Your order has been received.']")
     WebElement orderReceieved;

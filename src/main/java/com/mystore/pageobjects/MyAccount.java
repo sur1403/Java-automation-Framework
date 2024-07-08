@@ -32,20 +32,20 @@ public class MyAccount extends BaseClass {
     WebElement register;
 
     public LostPassworsdPage lostPasswrd() throws Throwable{
-        Action.click(driver, lostPwd);
+        Action.click(getDriver(), lostPwd);
         return new LostPassworsdPage();
     }
 
     public void login(String user, String pass) throws Throwable{
         Action.type(loginUser, user);
         Action.type(loginPwd, pass);
-        Action.click(driver, loginBtn);
+        Action.click(getDriver(), loginBtn);
     }
 
     public String register(String user, String pass) throws Throwable{
         Action.type(email, user);
         Action.type(password, pass);
-        Action.click(driver, register);
+        Action.click(getDriver(), register);
         return new RegisterUserLogin().getText(user);
 
 

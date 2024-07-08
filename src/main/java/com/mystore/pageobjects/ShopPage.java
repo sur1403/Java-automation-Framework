@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ShopPage extends BaseClass {
 
     public ShopPage(){
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     @FindBy(xpath = "//h3[text()='Android Quick Start Guide']")
@@ -61,45 +61,45 @@ public class ShopPage extends BaseClass {
     WebElement thinkingHTMLToBasket;
 
     public boolean isProductAvailable(){
-        Action.isDisplayed(driver, andriod);
-        Action.isDisplayed(driver, JS);
-        Action.isDisplayed(driver, HTML);
-        Action.isDisplayed(driver, HTMLWebApp);
-        Action.isDisplayed(driver, seleniumRuby);
-        Action.isDisplayed(driver, masterJS);
-        Action.isDisplayed(driver, jsDS);
-        return Action.isDisplayed(driver, thinkingHTML);
+        Action.isDisplayed(getDriver(), andriod);
+        Action.isDisplayed(getDriver(), JS);
+        Action.isDisplayed(getDriver(), HTML);
+        Action.isDisplayed(getDriver(), HTMLWebApp);
+        Action.isDisplayed(getDriver(), seleniumRuby);
+        Action.isDisplayed(getDriver(), masterJS);
+        Action.isDisplayed(getDriver(), jsDS);
+        return Action.isDisplayed(getDriver(), thinkingHTML);
     }
 
     public void clickOnAndriod(){
-        Action.click(driver,andriodAddToBasket );
+        Action.click(getDriver(),andriodAddToBasket );
     }
 
     public void clickOnJS(){
-        Action.click(driver,JSAddToBasket );
+        Action.click(getDriver(),JSAddToBasket );
     }
 
     public void clickOnHTML(){
-        Action.click(driver,HTMLAddToBasket );
+        Action.click(getDriver(),HTMLAddToBasket );
     }
 
     public void clickOnHTMLWeb(){
-        Action.click(driver,HTMLWebAppToBasket );
+        Action.click(getDriver(),HTMLWebAppToBasket );
     }
 
     public void selenium(){
-        Action.click(driver,seleniumAddToRubyToBasket );
+        Action.click(getDriver(),seleniumAddToRubyToBasket );
     }
 
     public void clickOnJMasterJS() {
-        Action.click(driver, masterJSToBasket);
+        Action.click(getDriver(), masterJSToBasket);
     }
 
     public void clickOnJSDSToBasket(){
-        Action.click(driver,JSDSToBasket );
+        Action.click(getDriver(),JSDSToBasket );
     }
 
     public void clickOnJThinkHTML(){
-        Action.click(driver,thinkingHTMLToBasket );
+        Action.click(getDriver(),thinkingHTMLToBasket );
     }
 }

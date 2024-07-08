@@ -10,7 +10,7 @@ public class ThinkInHTML extends BaseClass {
 
     public ThinkInHTML() {
 
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(getDriver(), this);
     }
 
     @FindBy(xpath = "//button[text()='Add to basket']")
@@ -26,17 +26,17 @@ public class ThinkInHTML extends BaseClass {
     WebElement reviewTitle;
 
     public boolean ifAddToBasketVisible() {
-        return Action.isDisplayed(driver, addToBasket);
+        return Action.isDisplayed(getDriver(), addToBasket);
     }
 
     public boolean validatateDescription() {
-        return Action.isDisplayed(driver, description);
+        return Action.isDisplayed(getDriver(), description);
     }
 
     public void clickReviewsLink() throws InterruptedException {
-       Action.click(driver, reviewsLink);
+       Action.click(getDriver(), reviewsLink);
     }
     public boolean validateTitle() {
-        return Action.isDisplayed(driver, reviewTitle);
+        return Action.isDisplayed(getDriver(), reviewTitle);
     }
 }
