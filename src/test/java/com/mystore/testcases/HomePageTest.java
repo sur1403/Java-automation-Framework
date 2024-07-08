@@ -23,7 +23,7 @@ public class HomePageTest extends BaseClass {
     SeleniumRuby seleniumRuby;
     ThinkInHTML thinkInHTML;
     MasterJS masterjs;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 
     @BeforeMethod
     public void setup() throws Throwable {
@@ -38,7 +38,7 @@ public class HomePageTest extends BaseClass {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        getDriver().quit();
     }
 
     @Test(description = "Validate there are only 3 sliders on home page")
