@@ -18,7 +18,6 @@ public class BaseClass {
 //    public static WebDriver driver;
     public static Properties prop;
     public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
-
     public static WebDriver getDriver(){
         return driver.get();
     }
