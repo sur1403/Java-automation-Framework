@@ -7,7 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.w3c.dom.DOMConfiguration;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,10 +18,16 @@ import java.util.Properties;
 
 
 public class BaseClass {
-//    public static WebDriver driver;
+    //    public static WebDriver driver;
     public static Properties prop;
     public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
-    public static WebDriver getDriver(){
+
+    @BeforeSuite
+    public void beforeSuite() {
+        DOMConfigurator.configure("/Users/aseempathak/Downloads/Java-automation-Framework/log4j.xml");
+    }
+
+    public static WebDriver getDriver() {
         return driver.get();
     }
 

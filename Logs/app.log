@@ -1,0 +1,7 @@
+2024-07-09 11:46:54 DEBUG TestNG:82 - suiteXmlPath: "/Users/aseempathak/Library/Caches/JetBrains/IdeaIC2021.1/temp-testng-customsuite.xml"
+2024-07-09 11:46:54 WARN  Configuration:133 - Detected a static method [com.mystore.base.BaseClass.loadConfig()]. Static configuration methods can cause unexpected behavior.
+2024-07-09 11:46:54 INFO  Utils:112 - [TestNG] Running:
+  /Users/aseempathak/Library/Caches/JetBrains/IdeaIC2021.1/temp-testng-customsuite.xml
+
+2024-07-09 11:59:35 WARN  Configuration:133 - Detected a static method [com.mystore.base.BaseClass.loadConfig()]. Static configuration methods can cause unexpected behavior.
+2024-07-09 11:59:35 WARN  Configuration:133 - Detected a static method [com.mystore.base.BaseClass.loadConfig()]. Static configuration methods can cause unexpected behavior.

@@ -5,6 +5,7 @@ import com.mystore.pageobjects.IndexPage;
 import com.mystore.pageobjects.MasterJS;
 import com.mystore.pageobjects.SeleniumRuby;
 import com.mystore.pageobjects.ThinkInHTML;
+import com.mystore.utility.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -43,10 +44,12 @@ public class HomePageTest extends BaseClass {
 
     @Test(description = "Validate there are only 3 sliders on home page")
     public void validateThreeSlider() throws Throwable {
-
+        Log.startTestCase("LoginTests");
         List<WebElement> sliders = indexPage.findSliders();
+        Log.info("User is validating 3 sliders");
         Assert.assertNotNull(sliders);
         Assert.assertEquals(3, sliders.size());
+        Log.info("User validated there are 3 sliders  are present ");
     }
 
     @Test(description = "Validate there are only 3 arriavals on home page")

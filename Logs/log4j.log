@@ -1,0 +1,96 @@
+2024-07-09 11:33:14 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:33:14 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:33:14 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:33:14 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:33:14 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:33:14 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:33:14 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:33:14 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:33:14 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:33:14 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:33:14 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:33:14 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:38:24 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:38:24 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:38:24 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:38:24 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:38:24 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:38:24 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:38:24 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:38:24 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:38:24 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:38:24 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:38:24 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:38:24 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:40:05 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:40:05 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:40:05 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:40:05 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:40:05 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:40:05 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:40:05 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:40:05 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:40:05 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:40:05 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:40:05 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:40:05 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:41:46 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:41:46 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:41:46 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:41:46 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:41:46 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:41:46 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:41:46 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:41:46 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:41:46 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:41:46 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:41:46 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:41:46 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:46:54 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:46:54 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:46:54 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:46:54 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:46:54 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:46:54 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:46:54 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:46:54 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:46:54 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:46:54 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:46:54 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:46:54 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:59:35 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:59:35 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:59:35 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:59:35 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:59:35 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:59:35 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 11:59:35 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 11:59:35 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 11:59:35 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 11:59:35 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 11:59:35 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 11:59:35 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 12:00:10 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 12:00:10 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 12:00:10 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 12:00:10 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 12:00:10 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 12:00:10 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 12:00:10 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 12:00:10 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 12:00:10 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 12:00:10 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 12:00:10 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 12:00:10 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 12:00:26 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 12:00:26 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 12:00:26 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 12:00:26 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 12:00:26 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 12:00:26 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver
+2024-07-09 12:00:26 DEBUG WebDriverManager:227 - Using WebDriverManager 5.9.1
+2024-07-09 12:00:26 DEBUG ResolutionCache:186 - Resolution chrome=126 in cache (valid until 12:09:35 09/07/2024 NZST)
+2024-07-09 12:00:26 DEBUG ResolutionCache:186 - Resolution chrome126=126.0.6478.126 in cache (valid until 14:27:40 09/07/2024 NZST)
+2024-07-09 12:00:26 INFO  WebDriverManager:1220 - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-09 12:00:26 DEBUG WebDriverManager:1179 - Driver chromedriver 126.0.6478.126 found in cache
+2024-07-09 12:00:26 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as /Users/aseempathak/.cache/selenium/chromedriver/mac-arm64/126.0.6478.126/chromedriver

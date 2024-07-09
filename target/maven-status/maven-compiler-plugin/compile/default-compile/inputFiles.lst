@@ -1,5 +1,6 @@
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/MasterJS.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/utility/Log.java
+/Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/dataprovider/DataProvider.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/HTMLForms.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/SeleniumRuby.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/HTMLWebDeveLop.java
@@ -10,6 +11,7 @@
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/FunctionalProgrammingJS.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/actiondriver/Action.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/IndexPage.java
+/Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/utility/NewExcelLibrary.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/ThinkInHTML.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/pageobjects/RegisterUserLogin.java
 /Users/aseempathak/Downloads/Java-automation-Framework/src/main/java/com/mystore/base/BaseClass.java
